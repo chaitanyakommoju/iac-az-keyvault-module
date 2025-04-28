@@ -48,14 +48,14 @@ resource "azurerm_key_vault_secret" "this" {
   key_vault_id = azurerm_key_vault.this.id
 }
 ```
-Arguments:
+## Arguments:
 - **count**: Creates the secret only if create_secret is set to true.
 - **name**: The name of the secret.
 - **value**: The value of the secret.
 - **key_vault_id**: The ID of the Key Vault where the secret will be stored.
-```
-```
+
 ## Variables
+
 | Variable                      | Description                                                       |
 |-------------------------------|-------------------------------------------------------------------|
 | `keyvault_name`                | The name of the Azure Key Vault.                                  |
