@@ -17,3 +17,8 @@ output "secret_name" {
   description = "Secret Name (if created)"
   value       = try(azurerm_key_vault_secret.this[0].name, null)
 }
+
+output "keyvault_name" {
+  description = "Name of the created Key Vault"
+  value       = azurerm_key_vault.this.name
+}
